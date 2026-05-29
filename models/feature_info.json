@@ -1,0 +1,63 @@
+{
+  "model_type": "XGBoost",
+  "n_features": 29,
+  "features": [
+    "Sector",
+    "BHK",
+    "Area_sqft",
+    "Furnishing",
+    "Age",
+    "Floor",
+    "Amenities_Score",
+    "Location_Score",
+    "Distance_Airport_km",
+    "Distance_Hospital_km",
+    "Distance_Park_km",
+    "Distance_Mall_km",
+    "Near_Hospital",
+    "Near_Park",
+    "Near_Mall",
+    "Traffic_Level",
+    "Facing_Score",
+    "Property_Type_House",
+    "Property_Type_Villa",
+    "Area_sqft_sq",
+    "log_Area",
+    "Area_x_BHK",
+    "Area_x_Villa",
+    "loc_x_area",
+    "amenity_x_area",
+    "BHK_x_Floor",
+    "loc_x_amenity",
+    "dist_airport_x_area",
+    "age_x_area"
+  ],
+  "target": "Price_Lakh",
+  "r2_score": 0.8089,
+  "mae_lakh": 29.45,
+  "rmse_lakh": 39.01,
+  "train_rows": 432,
+  "test_rows": 108,
+  "all_results": {
+    "Linear Regression": {
+      "r2": 0.8021,
+      "mae": 31.16
+    },
+    "Ridge Regression": {
+      "r2": 0.8082,
+      "mae": 30.53
+    },
+    "Random Forest": {
+      "r2": 0.7924,
+      "mae": 30.59
+    },
+    "XGBoost": {
+      "r2": 0.8089,
+      "mae": 29.45
+    },
+    "XGBoost (deep)": {
+      "r2": 0.7814,
+      "mae": 31.32
+    }
+  }
+}
